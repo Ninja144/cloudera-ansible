@@ -1,10 +1,10 @@
-[master-node]
-#master-node-1 ansible_host=192.168.10.2
+[master_node]
+master-node-1 ansible_host=192.168.10.2
 
-[slave-nodes]
+[slave_nodes]
 #slave-node-1 ansible_host=192.168.10.3
 #slave-node-2 ansible_host=192.168.10.4
 
 [server_ALL:children]
-master-node
-slave-nodes
+master_node
+slave_nodes
