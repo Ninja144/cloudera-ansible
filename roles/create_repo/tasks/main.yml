@@ -1,0 +1,23 @@
+---
+# tasks file for create_repo
+
+- name: Install tar
+  yum:
+    name: tar 
+    state: latest
+
+- name: Extract archive
+  unarchive: 
+    src: "{{ archive_file }}" 
+    dest: "{{ apache_directory }}"
+
+- name: Change rules repo
+  command: chmod -R ugo+rX "{{ main_cloudera_repo }}"
+
+- name: Set ip address in repo apache
+  command: sed -i 's/<web_server>/localhost/' "{{ web_cloudera_repo }}"  
+
+- name: Create yum repo
+  copy:
+    src: "{{ web_cloudera_repo }}"
+    dest: "{{ yum_repos }}"
