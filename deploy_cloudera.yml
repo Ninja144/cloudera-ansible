@@ -1,0 +1,7 @@
+---
+- name: Deploy cloudera
+  hosts: master_node
+  become: yes
+
+  roles:
+    - { role: create_repo, when: ansible_os_family == "RedHat" }
