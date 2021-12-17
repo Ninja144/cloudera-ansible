@@ -1,0 +1,8 @@
+---
+# handlers file for deploy_apache
+
+- name: Restart apache
+  ansible.builtin.systemd:
+    state: restarted
+    name: httpd
+    enabled: yes
