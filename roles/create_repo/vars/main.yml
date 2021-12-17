@@ -1,8 +1,11 @@
 ---
 # vars file for create_repo
 
-archive_file: PATH_OF_YOUR_ARCHIVE
+archive_file: PATH_TO_YOUR_ARCHIVE
 apache_directory: /var/www/html
 main_cloudera_repo: /var/www/html/cloudera-repos
 web_cloudera_repo: /var/www/html/cloudera-repos/cm7/7.4.4/redhat7/yum/cloudera-manager.repo
 yum_repos: /etc/yum.repos.d
+dir_need_files: /var/www/html/cloudera-repos/cm7/7.4.4
+need_files: /var/www/html/cloudera-repos/cm7/7.4.4/redhat7/yum
+

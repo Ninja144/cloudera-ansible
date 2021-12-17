@@ -21,3 +21,11 @@
   copy:
     src: "{{ web_cloudera_repo }}"
     dest: "{{ yum_repos }}"
+
+- name: Copy need files
+  copy:
+    src: "{{ need_files }}/{{ item }}"
+    dest: "{{ dir_need_files }}" 
+  loop:
+    - "allkeys.asc"
+    - "RPM-GPG-KEY-cloudera"
