@@ -8,11 +8,9 @@
 
 - name: Add parcels in config apache
   command: sed -i 's/AddType application\/x-gzip .gz .tgz/AddType application\/x-gzip .gz .tgz .parcel/' "{{ config_file }}"
-  notify:
-    - Restart apache
 
 - name: Start apache
-  ansible.builtin.systemd:
+  systemd:
     state: restarted
     name: httpd
     enabled: yes
