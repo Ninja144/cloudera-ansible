@@ -1,7 +1,7 @@
 ---
 # vars file for create_repo
 
-archive_file: ~/CDPPCBDwI7.1.7_LNX_EN.tar.gz
+archive_file: PATH_OF_YOUR_ARCHIVE
 apache_directory: /var/www/html
 main_cloudera_repo: /var/www/html/cloudera-repos
 web_cloudera_repo: /var/www/html/cloudera-repos/cm7/7.4.4/redhat7/yum/cloudera-manager.repo
