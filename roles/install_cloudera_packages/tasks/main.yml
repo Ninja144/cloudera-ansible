@@ -1,0 +1,9 @@
+---
+# tasks file for install_cloudera_packages
+
+- name: Install cloudera packages
+  yum: 
+    name:
+      - cloudera-manager-daemons
+      - cloudera-manager-agent
+      - cloudera-manager-server
