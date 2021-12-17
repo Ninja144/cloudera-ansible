@@ -1,0 +1,4 @@
+---
+# vars file for deploy_apache
+
+config_file: /etc/httpd/conf/httpd.conf
