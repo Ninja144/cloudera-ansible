@@ -1,8 +1,25 @@
 ---
-- name: Deploy cloudera
+- name: Preparation cloudera
   hosts: master_node
   become: yes
-
+    
   roles:
     - { role: deploy_apache, when: ansible_os_family == "RedHat" }
     - { role: create_repo, when: ansible_os_family == "RedHat" }
+
+
+- name: Install java
+  hosts: all
+  become: yes
+
+  roles:
+    - { role: install_java, when: ansible_os_family == "RedHat" }
+  
+
+- name: Install cloudera manager packages
+  hosts: master_node
+  become: yes
+  
+  roles:
+    - { role: install_cloudera_packages, when: ansible_os_family == "RedHat" }
+    - { role: install_and_configure_postgresql, when: ansible_os_family == "RedHat" }
