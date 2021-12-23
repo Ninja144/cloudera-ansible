@@ -31,9 +31,10 @@ setenforce 0
 
 #### Variables to be changed
 
-```ShellSession
+```
 # Path to archive cloudera
-sed -i 's/PATH_TO_YOUR_ARCHIVE/\/home\/dir\/archive/' roles/create_repo/vars/main.yml
+# Path = roles/create_repo/vars/main.yml
+archive_file: PATH_TO_YOUR_ARCHIVE
 
 # Passwords for your databases and users
 sed -i 's/YOUR_PASSWORD_FOR_USERS_AND_DATABASES/ExaMpLe_Pa$$w0rd/' roles/configure_data_bases/vars/main.yml
