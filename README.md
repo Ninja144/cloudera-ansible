@@ -49,7 +49,8 @@ PASSWORD: YOUR_PASSWORD_FOR_USERS_AND_DATABASES
 Uncomment the desired post configuration and comment out the unnecessary post configuration.
 <br/>
 The default is **postgresql-small.conf**
-<br />
+<br/>
+<br/>
 Path = roles/install_and_configure_postgresql/vars/main.yml
 
 ```
