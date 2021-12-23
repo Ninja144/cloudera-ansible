@@ -34,10 +34,13 @@ setenforce 0
 ```
 # Path to archive cloudera
 # Path = roles/create_repo/vars/main.yml
+
 archive_file: PATH_TO_YOUR_ARCHIVE
 
 # Passwords for your databases and users
-sed -i 's/YOUR_PASSWORD_FOR_USERS_AND_DATABASES/ExaMpLe_Pa$$w0rd/' roles/configure_data_bases/vars/main.yml
+# Path = roles/configure_data_bases/vars/main.yml
+
+PASSWORD: YOUR_PASSWORD_FOR_USERS_AND_DATABASES
 ```
 
 #### Deploy cluster
