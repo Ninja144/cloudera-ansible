@@ -2,8 +2,7 @@
 # tasks file for install_and_configure_postgresql
 
 - name: Install postgresql link
-  yum: 
-    name: "{{ link_postgresql }}"
+  command: yum install -y "{{ link_postgresql }}"
 
 - name: Install postgresql
   yum:
