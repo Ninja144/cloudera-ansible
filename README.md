@@ -25,7 +25,7 @@ systemctl stop firewalld
 systemctl disable firewalld
 
 # Stop and Disable SELinux
-sed -i.bak 's/.*=enforcing.*/=disabled/' /etc/selinux/config || sed -i.bak 's/.*=permissive.*/=disabled/' /etc/selinux/config 
+sed -i.bak 's/.*=enforcing.*/SELINUX=disabled/' /etc/selinux/config || sed -i.bak 's/.*=permissive.*/SELINUX=disabled/' /etc/selinux/config 
 setenforce 0
 ```
 
