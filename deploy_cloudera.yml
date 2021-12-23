@@ -24,3 +24,4 @@
     - { role: install_cloudera_packages, when: ansible_os_family == "RedHat" }
     - { role: install_and_configure_postgresql, when: ansible_os_family == "RedHat" }
     - { role: configure_data_bases, when: ansible_os_family == "RedHat" }
+    - { role: start_cloudera_scm_server, when: ansible_os_family == "RedHat" }
