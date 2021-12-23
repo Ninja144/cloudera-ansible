@@ -1,0 +1,8 @@
+---
+# tasks file for start_cloudera_scm_server
+
+- name: Start cloudera-scm-server
+  systemd:
+    name: cloudera-scm-server
+    state: started
+    enabled: yes
