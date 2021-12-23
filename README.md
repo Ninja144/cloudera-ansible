@@ -59,6 +59,7 @@ postgresql_config: postgresql-small.conf
 ```
 
 ### Deploy cluster
+
 ```ShellSession
-sh _deploy_cluster.sh ``username``
+sh _deploy_cluster.sh {username}
 ```
