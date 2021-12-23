@@ -31,19 +31,28 @@ setenforce 0
 
 ### Variables to be changed
 
-
 #### Path to archive cloudera
-```
-# Path = roles/create_repo/vars/main.yml
 
+Path = roles/create_repo/vars/main.yml
+```
 archive_file: PATH_TO_YOUR_ARCHIVE
 ```
 
 #### Password for your users and databases
-```
-# Path = roles/configure_data_bases/vars/main.yml
 
+Path = roles/configure_data_bases/vars/main.yml
+```
 PASSWORD: YOUR_PASSWORD_FOR_USERS_AND_DATABASES
+```
+
+#### Tuning postgresql.conf (optional)
+
+Uncomment the desired post configuration and comment out the unnecessary post configuration.
+```
+# Path = roles/install_and_configure_postgresql/vars/main.yml
+
+postgresql_config: postgresql-small.conf
+#postgresql_config: postgresql-large.conf
 ```
 
 ### Deploy cluster
