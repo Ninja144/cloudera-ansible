@@ -17,7 +17,7 @@ To deploy the cluster you can use :
 
 Ansible v2.7.5 it was tested cluster deployment to cloudera
 
-#### Preparatory nodes settings
+### Preparatory nodes settings
 
 ```ShellSession
 # Stop and Disable firewalld
@@ -29,24 +29,24 @@ sed -i.bak 's/.*=enforcing.*/SELINUX=disabled/' /etc/selinux/config ; sed -i.bak
 setenforce 0
 ```
 
-#### Variables to be changed
+### Variables to be changed
 
 
-##### Path to archive cloudera
+#### Path to archive cloudera
 ```
 # Path = roles/create_repo/vars/main.yml
 
 archive_file: PATH_TO_YOUR_ARCHIVE
 ```
 
-##### Passwords for your databases and users
+#### Passwords for your databases and users
 ```
 # Path = roles/configure_data_bases/vars/main.yml
 
 PASSWORD: YOUR_PASSWORD_FOR_USERS_AND_DATABASES
 ```
 
-#### Deploy cluster
+### Deploy cluster
 ```ShellSession
 sh _deploy_cluster.sh ``username``
 ```
