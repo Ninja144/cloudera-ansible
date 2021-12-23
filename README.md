@@ -32,14 +32,14 @@ setenforce 0
 ### Variables to be changed
 
 
-#### Change path to archive cloudera
+#### Path to archive cloudera
 ```
 # Path = roles/create_repo/vars/main.yml
 
 archive_file: PATH_TO_YOUR_ARCHIVE
 ```
 
-#### Change password for your users and databases
+#### Password for your users and databases
 ```
 # Path = roles/configure_data_bases/vars/main.yml
 
