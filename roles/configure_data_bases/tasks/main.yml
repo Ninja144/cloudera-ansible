@@ -24,4 +24,8 @@
     - "CREATE DATABASE das OWNER das ENCODING 'UTF8';"  
     - "CREATE DATABASE schemaregistry OWNER schemaregistry ENCODING 'UTF8';"  
     - "CREATE DATABASE smm OWNER smm ENCODING 'UTF8';"  
-    - "CREATE DATABASE ranger OWNER rangeradmin ENCODING 'UTF8';" 
+    - "CREATE DATABASE ranger OWNER rangeradmin ENCODING 'UTF8';"
+
+- name: Warning!!! Run the /opt/cloudera/cm/schema/scm_prepare_database.sh script
+  command: /opt/cloudera/cm/schema/scm_prepare_database.sh postgresql scm scm "{{ PASSWORD }}"
+
