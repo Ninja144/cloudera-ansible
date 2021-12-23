@@ -38,3 +38,8 @@ sed -i 's/PATH_TO_YOUR_ARCHIVE/\/home\/dir\/archive/' roles/create_repo/vars/mai
 # Passwords for your databases and users
 sed -i 's/YOUR_PASSWORD_FOR_USERS_AND_DATABASES/ExaMpLe_Pa$$w0rd/' roles/configure_data_bases/vars/main.yml
 ```
+
+#### Deploy cluster
+```ShellSession
+sh _deploy_cluster.sh ``username``
+```
