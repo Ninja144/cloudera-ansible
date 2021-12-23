@@ -1,8 +1,6 @@
 # Deploy a Production Ready Cloudera Cluster
 
-![Cloudera Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cloudera_logo_darkorange.png/640px-Cloudera_logo_darkorange.png)
-
-<img align="left" alt="Gmail" title="Gmail" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cloudera_logo_darkorange.png/640px-Cloudera_logo_darkorange.png" />
+<img align="left" alt="Gmail" title="Gmail" width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cloudera_logo_darkorange.png/640px-Cloudera_logo_darkorange.png" />
 
 If you have questions, check the documentation at [docs.cloudera.com](https://docs.cloudera.com/cdp-private-cloud-base/7.1.7/index.html)
 
