@@ -17,7 +17,7 @@ To deploy the cluster you can use :
 
 Ansible v2.7.5 it was tested cluster deployment to cloudera
 
-#### Preparatory node settings
+#### Preparatory nodes settings
 
 ```ShellSession
 # Stop and Disable firewalld
