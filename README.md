@@ -27,6 +27,7 @@ systemctl disable firewalld
 # Stop and Disable SELinux
 sed -i.bak 's/.*=enforcing.*/=disabled/' /etc/selinux/config || sed -i.bak 's/.*=permissive.*/=disabled/' /etc/selinux/config 
 setenforce 0
+```
 
 #### Variables to be changed
 
@@ -36,3 +37,4 @@ sed -i 's/PATH_TO_YOUR_ARCHIVE/\/home\/dir\/archive/' roles/create_repo/vars/mai
 
 # Passwords for your databases and users
 sed -i 's/YOUR_PASSWORD_FOR_USERS_AND_DATABASES/ExaMpLe_Pa$$w0rd/' roles/configure_data_bases/vars/main.yml
+```
