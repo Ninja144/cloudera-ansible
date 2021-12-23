@@ -31,8 +31,9 @@ setenforce 0
 
 #### Variables to be changed
 
+
+##### Path to archive cloudera
 ```
-# Path to archive cloudera
 # Path = roles/create_repo/vars/main.yml
 
 archive_file: PATH_TO_YOUR_ARCHIVE
