@@ -1,0 +1,27 @@
+---
+# tasks file for configure_data_bases
+
+- name: Creating users in postgresql
+  shell: echo "{{ item }}" | sudo -u postgres psql -U postgres
+  loop:
+    - "CREATE ROLE scm LOGIN PASSWORD '{{ PASSWORD }}';" 
+    - "CREATE ROLE rman LOGIN PASSWORD '{{ PASSWORD }}';" 
+    - "CREATE ROLE hue LOGIN PASSWORD '{{ PASSWORD }}';" 
+    - "CREATE ROLE hive LOGIN PASSWORD '{{ PASSWORD }}';" 
+    - "CREATE ROLE oozie LOGIN PASSWORD '{{ PASSWORD }}';"  
+    - "CREATE ROLE schemaregistry LOGIN PASSWORD '{{ PASSWORD }}';"  
+    - "CREATE ROLE smm LOGIN PASSWORD '{{ PASSWORD }}';" 
+    - "CREATE ROLE rangeradmin LOGIN PASSWORD '{{ PASSWORD }}';" 
+
+- name: Configure data bases in postgresql
+  shell: echo "{{ item }}" | sudo -u postgres psql -U postgres
+  loop:
+    - "CREATE DATABASE scm OWNER scm ENCODING 'UTF8';"  
+    - "CREATE DATABASE rman OWNER rman ENCODING 'UTF8';"  
+    - "CREATE DATABASE hue OWNER hue ENCODING 'UTF8';"  
+    - "CREATE DATABASE metastore OWNER hive ENCODING 'UTF8';"  
+    - "CREATE DATABASE oozie OWNER oozie ENCODING 'UTF8';"  
+    - "CREATE DATABASE das OWNER das ENCODING 'UTF8';"  
+    - "CREATE DATABASE schemaregistry OWNER schemaregistry ENCODING 'UTF8';"  
+    - "CREATE DATABASE smm OWNER smm ENCODING 'UTF8';"  
+    - "CREATE DATABASE ranger OWNER rangeradmin ENCODING 'UTF8';" 
