@@ -51,9 +51,8 @@ PASSWORD: YOUR_PASSWORD_FOR_USERS_AND_DATABASES
 ```
 
 #### Tuning postgresql.conf (optional)
+##### Used PostgreSQL 10
 Uncomment the desired PostgreSQL configuration and comment out the unnecessary PostgreSQL configuration.
-<br/>
-Used PostgreSQL 10
 <br/>
 The default is **postgresql-small.conf**
 <br/>
