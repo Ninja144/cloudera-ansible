@@ -15,8 +15,8 @@
     name: httpd
     enabled: yes
 
-- name: Disable ipv6
-  shell: echo 'net.ipv6.conf.all.disable_ipv6 = 1' >> "{{ sysctl_conf }}";  echo 'net.ipv6.conf.default.disable_ipv6 = 1' >> "{{ sysctl_conf }}"
+#- name: Disable ipv6
+#  shell: echo 'net.ipv6.conf.all.disable_ipv6 = 1' >> "{{ sysctl_conf }}";  echo 'net.ipv6.conf.default.disable_ipv6 = 1' >> "{{ sysctl_conf }}"
 
-- name: Accept options
-  command: sysctl -p
+#- name: Accept options
+#  command: sysctl -p
