@@ -2,10 +2,8 @@
 # tasks file for install_driver_for_ranger
 
 - name: Install postgres-jdbc driver
-  yum:
-    name: postgres-jdbc
-    state: latest
-
+  command: yum install -y postgresql-jdbc*
+  
 - name: Rename driver 
   copy:
     src: "{{ src_name }}" 
