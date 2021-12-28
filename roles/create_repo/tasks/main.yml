@@ -15,7 +15,7 @@
   command: chmod -R ugo+rX "{{ main_cloudera_repo }}"
 
 - name: Set ip address in repo apache
-  command: sed -i 's/<web_server>/localhost/' "{{ web_cloudera_repo }}"  
+  command: sed -i 's/<web_server>/{{ web_server_address }}/' "{{ web_cloudera_repo }}"  
 
 - name: Create yum repo
   copy:
