@@ -1,0 +1,5 @@
+---
+# vars file for create_repo
+
+src_name: /usr/share/java/postgresql-jdbc.jar
+dest_name: /usr/share/java/postgresql-connector-java.jar

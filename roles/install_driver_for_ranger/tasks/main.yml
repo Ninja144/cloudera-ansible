@@ -8,12 +8,12 @@
 
 - name: Rename driver 
   copy:
-    src: /usr/share/java/postgresql-jdbc.jar
-    dest: /usr/share/java/postgresql-connector-java.jar
+    src: "{{ src_name }}" 
+    dest: "{{ dest_name }}"
 
 - name: Change the access mode 
   file:
-    path: /usr/share/java/postgresql-connector-java.jar
+    path: "{{ dest_name }}"
     mode: "644"
 
 - name: Restart PostgreSQL
