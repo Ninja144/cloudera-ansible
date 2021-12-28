@@ -50,6 +50,13 @@ Path = roles/configure_data_bases/vars/main.yml
 PASSWORD: YOUR_PASSWORD_FOR_USERS_AND_DATABASES
 ```
 
+#### Web server adderess
+Path = roles/create_repo/vars/main.yml
+
+```
+web_server_address: YOUR_WEB_SERVER_ADDRESS
+```
+
 #### Tuning postgresql.conf (optional)
 ##### Used PostgreSQL 10
 Uncomment the desired PostgreSQL configuration and comment out the unnecessary PostgreSQL configuration.
