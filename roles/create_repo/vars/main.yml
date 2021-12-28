@@ -4,6 +4,7 @@
 archive_file: PATH_TO_YOUR_ARCHIVE
 apache_directory: /var/www/html
 main_cloudera_repo: /var/www/html/cloudera-repos
+web_server_address: YOUR_WEB_SERVER_ADDRESS
 web_cloudera_repo: /var/www/html/cloudera-repos/cm7/7.4.4/redhat7/yum/cloudera-manager.repo
 yum_repos: /etc/yum.repos.d
 dir_need_files: /var/www/html/cloudera-repos/cm7/7.4.4
