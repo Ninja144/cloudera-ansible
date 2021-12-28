@@ -1,0 +1,23 @@
+---
+# tasks file for install_driver_for_ranger
+
+- name: Install postgres-jdbc driver
+  yum:
+    name: postgres-jdbc
+    state: latest
+
+- name: Rename driver 
+  copy:
+    src: /usr/share/java/postgresql-jdbc.jar
+    dest: /usr/share/java/postgresql-connector-java.jar
+
+- name: Change the access mode 
+  file:
+    path: /usr/share/java/postgresql-connector-java.jar
+    mode: "644"
+
+- name: Restart PostgreSQL
+  systemd:
+    state: restarted
+    name: postgresql-10.service
+    enabled: yes 
