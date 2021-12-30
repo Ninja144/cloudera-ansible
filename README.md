@@ -16,8 +16,9 @@ To deploy the cluster you can use :
 #### OS version
 
 * [x] CentOS 7 / RedHat 7
-* [ ] Debian
-* [ ] Ubuntu
+* [ ] CentOS 8 / RedHat 8
+* [ ] Ubuntu 18
+* [ ] Ubuntu 20
 
 ### Ansible
 
