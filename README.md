@@ -24,7 +24,7 @@ To deploy the cluster you can use :
 
 #### Ansible version
 
-Ansible 2.9.25-1 it was tested cluster deployment to cloudera
+Ansible 2.9.25 it was tested cluster deployment to cloudera
 
 ### Preparatory nodes settings
 
