@@ -11,6 +11,14 @@ To deploy the cluster you can use :
 ### Current release
 7.1.7
 
+### OS
+
+#### OS version
+
+* [x] CentOS 7 / RedHat 7
+* [] Debian
+* [] Ubuntu
+
 ### Ansible
 
 #### Ansible version
