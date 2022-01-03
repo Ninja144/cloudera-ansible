@@ -9,7 +9,7 @@ If you have questions, check the documentation at [docs.cloudera.com](https://do
 To deploy the cluster you can use :
 
 ### Current release
-7.1.7
+0.1
 
 ### OS
 
